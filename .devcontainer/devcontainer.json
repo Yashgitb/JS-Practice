@@ -1,6 +1,20 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	"features": {
-		"ghcr.io/devcontainers-extra/features/node-asdf:0": {}
-	}
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/node-asdf:0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dracula-theme.theme-dracula",      // 👈 Dracula Dark Theme
+        "esbenp.prettier-vscode",          // 👉 Prettier Formatter
+        "dbaeumer.vscode-eslint"           // 👉 ESLint Linter
+      ],
+      "settings": {
+        "workbench.colorTheme": "Dracula", // 👈 Auto-apply dark theme
+        "editor.formatOnSave": true,
+        "editor.fontSize": 14
+      }
+    }
+  }
 }
