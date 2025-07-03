@@ -64,3 +64,27 @@ console.log(myObj);
 //        Function  =>  function
 //        Object  =>  object
 
+
+
+// Stack (Primitive)   and Heap(NonPrimitive)
+
+let myYoutubeName = "Soulma8"
+let anotherName = myYoutubeName 
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email:"yashpal1904@gmail.com",
+    upi: "user@ybl"
+
+}
+
+let userTwo = userOne
+userTwo.email = "yash@google.com"
+
+console.log(userOne);
+console.log(userTwo);
+
+
